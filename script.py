@@ -18,7 +18,7 @@ uso_bici['Comunidad'] = uso_bici['Unnamed: 0']
 uso_bici = uso_bici.drop(uso_bici.columns[[0,-2]], axis=1)
 
 # Imprimo el dataset
-uso_bici.head()
+#uso_bici.head()
 
 # Hago un plot
 fig = uso_bici.groupby('Comunidad')['Falta de una red completa de carriles bici'].mean().plot(kind='bar',
